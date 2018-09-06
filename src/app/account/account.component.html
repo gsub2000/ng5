@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i" rel="stylesheet">
+
+   <style type="text/css">
+
+   .body{
+     word-wrap: break-word;
+     text-align: center;
+     font-family: 'Ubuntu', sans-serif;
+   }
+
+   .a{
+     color:#000;
+   }
+
+   .a:hover{
+     text-decoration-line: underline;
+     color:black;
+   }
+
+   .container{
+     margin-top:80px;
+     margin-left: auto;
+   }
+
+
+   #post-it-main{
+     height:140px;
+     background: linear-gradient(#E2F9F2,#DAF7FB);
+     color:#292B2C;
+     width:100%;
+     text-align: center;
+     font-family: 'Ubuntu', sans-serif;
+     border-radius: 38px 0px 38px 0px;
+   }
+
+   .post-it-sm{
+     height:150px;
+     background-color: white;
+     color:#b1b1b1;
+     width:100%;
+     text-align: center;
+     font-family: 'Ubuntu', sans-serif;
+     border-style: solid;
+     border-color: #dedede;
+     border-radius: 38px 0px 38px 0px;
+     border-width: thin;
+     padding-left: 20px;
+     padding-right: 20px;
+     transition: border-color 3s, color 2s;
+     transition-timing-function: ease;
+   }
+
+   .post-it-sm:hover{
+   border-color: #292B2C;
+   color:#292B2C;
+   }
+
+   .post-it{
+     height:230px;
+     overflow-y: scroll;
+     background-color: white;
+     color:#b1b1b1;
+     width:100%;
+     text-align: center;
+     font-family: 'Ubuntu', sans-serif;
+     border-style: solid;
+     border-color: #dedede;
+     border-radius: 0px 0px 0px 0px;
+     border-width: thin;
+     padding-left: 20px;
+     padding-right: 20px;
+     transition: border-color 3s, color 2s;
+     transition-timing-function: ease;
+   }
+
+   .post-it:hover{
+   border-color: #292B2C;
+   color:#292B2C;
+   }
+
+
+   .title{
+     font-size: 19px;
+     font-weight: bold;
+     padding-bottom: 10px;
+     padding-top: 20px;
+   }
+
+
+   .text{
+     justify-content: right;
+     margin-left: 20px;
+   }
+
+
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9edcce;
+  border: 0px none #ffffff;
+  border-radius: 56px;
+}
+::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:active {
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+  border: 0px none #ffffff;
+  border-radius: 60px;
+}
+::-webkit-scrollbar-track:hover {
+}
+::-webkit-scrollbar-track:active {
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+</style>
+
+
+ </head>
+ <body>
+
+ <div class="container">
+   <div class="row">
+
+     <div class="col-sm-3">
+
+
+     </div>
+
+     <div class="col-sm-6">
+
+       <div id="post-it-main">
+         <div class="title">My Account</div>
+         <p>Name: [name]</p>
+         <p>GUID: [guid]</p>
+
+     </div>
+
+     <div class="col-sm-3">
+
+     </div>
+   </div>
+
+
+
+ </div>
+
+
+
+
+ <div class="row">
+
+   <div class="col-sm-1">
+   </div>
+
+   <div class="col-sm-3">
+     <div class="post-it-sm" style="margin-top:30px;">
+       <div class="title" >Account Details</div>
+       <p> [date created]</p>
+       <p> [date accessed]</p>
+     </div>
+   </div>
+
+<!--
+   <div class="col-sm-3">
+     <div class="post-it" style="margin-top:30px;">
+       <div class="title">My Subscriptions</div>
+       <p><ul>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+         <li>autogen subscription</li>
+       </ul>
+     </p>
+
+
+   </div>
+ </div> -->
+
+ <div class="col-sm-3">
+   <div class="post-it-sm" style="margin-top:30px;">
+     <div class="title">Options</div>
+
+     <span style="text-align: right"><a href="offers"><button type="submit" class="btn btn-primary btn-xs">Add Offers</button></a></span>
+     <!-- <br><br> -->
+     <!-- <span style="text-align: right"><button type="button" class="btn btn-primary btn-xs">Link Account</button></span> -->
+
+   </div>
+ </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+ </body>
+</html>
